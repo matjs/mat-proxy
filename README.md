@@ -11,20 +11,11 @@ npm install --save-dev mat-proxy
 ## Usage
 
 ```javascript
-var mat  = require('mat')
-var rap  = require('mat-rap')
+var mat   = require('mat')
 var proxy = require('mat-proxy')
 
-// rap mock数据环境
+// 反向代理到指定的host上
 mat.task('default', function () {
-  mat.url([/\.json/])
-    .use(rap({
-      projectId: 'your rap project id'
-    }))
-})
-
-// daily 数据接口环境
-mat.task('daily', function () {
   mat.url([/\.json/])
     .use(proxy({
       proxyPass: 'your.proxy.host'
@@ -36,4 +27,4 @@ mat.task('daily', function () {
 
 - `proxyPass`
   
-  反向代理目标地址，可以是域名（本地配置host），也可以直接ip地址
+  反向代理目标host，可以是域名（本地配置host），也可以直接ip地址
