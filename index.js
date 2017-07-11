@@ -1,6 +1,9 @@
+var minimist    = require('minimist')
+var argv        = minimist(process.argv.slice(2))
+
 function proxy(opts) {
   return function *proxy(next) {
-    this.url = this.url.replace(this.host, opts.proxyPass)
+    this.proxyPass = argv.d || opts.proxyPass
     yield next
   }
 }
