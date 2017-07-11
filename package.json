@@ -1,7 +1,7 @@
 {
   "name": "mat-proxy",
   "description": "配置反向代理host的mat插件",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "url": "https://github.com/matjs/mat-proxy"
   },
@@ -11,10 +11,16 @@
   "engines": {
     "node": ">=0.12.0"
   },
+  "dependencies": {
+    "minimist": "1.1.1",
+    "mat": ">=0.1.3"
+  },
   "main": "index",
   "licenses": "MIT",
   "bugs": {
     "url": "https://github.com/matjs/mat-proxy/issues"
   },
-  "homepage": "https://github.com/matjs/mat-proxy"
+  "homepage": "https://github.com/matjs/mat-proxy",
+  "_from": "mat-proxy@0.0.2",
+  "_resolved": "http://registry.npm.alibaba-inc.com/mat-proxy/download/mat-proxy-0.0.2.tgz"
 }
