@@ -1,7 +1,7 @@
 {
   "name": "mat-proxy",
   "description": "配置反向代理host的mat插件",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "repository": {
     "url": "https://github.com/matjs/mat-proxy"
   },
