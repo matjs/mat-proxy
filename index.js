@@ -5,6 +5,7 @@ function proxy(opts = {}) {
   return function *proxy(next) {
     this.protocolAlias = opts.protocolAlias
     this.proxyPass = opts.proxyPass || argv.d || argv.o
+    this.rapProjectId = opts.projectId
     yield next
   }
 }
